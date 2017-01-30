@@ -9,6 +9,10 @@ class UserMailer < ApplicationMailer
     @user = user
     mail to: user.email, subject: "Account activation"
   end
+  
+  def test_email
+    mail to: "icebluedill11@email.com", subject: "Test Email"
+  end
 
   # Subject can be set in your I18n file at config/locales/en.yml
   # with the following lookup:
